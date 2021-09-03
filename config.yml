@@ -11,6 +11,8 @@ dockitems_remove:
   - 'App Store'
 
 dockitems_persist:
+  - name: "Mission Control"
+    path: "/Applicatsons/Mission Control.app/"
   - name: "iTerm"
     path: "/Applications/iTerm.app/"
     # pos: 5
@@ -26,6 +28,10 @@ dockitems_persist:
     path: "/Applications/Spotify.app/"
   - name: "Todoist"
     path: "/Applications/Todoist.app/"
+  - name: "1Password 7"
+    path: "/Applications/1Password 7.app/"
+  - name: "Brave Browser"
+    path: "/Applications/Brave Browser.app/"
 
 configure_sudoers: false
 
@@ -72,6 +78,7 @@ homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
   - alfred
   - bettertouchtool
+  - brave-browser
   - discord
   - docker
   - insync
