@@ -86,6 +86,7 @@ homebrew_cask_apps:
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_email: "garrettheath4@gmail.com"
 mas_password: ""
+mas_signin_dialog: true
 mas_installed_apps:
   - { name: "1Keyboard", id: 766939888 }
   - { name: "1Password 7 - Password Manager", id: 1333542190 }
@@ -107,7 +108,7 @@ mas_installed_apps:
   - { name: "Tampermonkey", id: 1482490089 }
   - { name: "Vimari", id: 1480933944 }
 
-#osx_script: "~/.osx --no-restart"
+osx_script: "~/.osx --no-restart"
 
 configure_sublime: false
 
