@@ -12,7 +12,7 @@ dockitems_remove:
 
 dockitems_persist:
   - name: "Mission Control"
-    path: "/Applicatsons/Mission Control.app/"
+    path: "/System/Applications/Mission Control.app/"
     pos: 1
   - name: "iTerm"
     path: "/Applications/iTerm.app/"
@@ -24,41 +24,41 @@ dockitems_persist:
     path: "/Applications/WireGuard.app/"
     pos: 4
   - name: "Contacts"
-    path: "/Applications/Contacts.app/"
-    pos: 6
+    path: "/System/Applications/Contacts.app/"
+    pos: 5
   - name: "Calendar"
-    path: "/Applications/Calendar.app/"
+    path: "/System/Applications/Calendar.app/"
+    pos: 6
+  - name: "Maps"
+    path: "/System/Applications/Maps.app/"
     pos: 7
-  - name: "Todoist"
-    path: "/Applications/Todoist.app/"
-    pos: 8
-  - name: "Messages"
-    path: "/Applications/Messages.app/"
-    pos: 9
-  - name: "Messenger"
-    path: "/Applications/Messenger.app/"
-    pos: 10
   - name: "Drafts"
     path: "/Applications/Drafts.app/"
-    pos: 11
+    pos: 8
+  - name: "Evernote"
+    path: "/Applications/Evernote.app/"
+    pos: 9
+  - name: "Todoist"
+    path: "/Applications/Todoist.app/"
+    pos: 10
   - name: "Mail"
-    path: "/Applications/Mail.app/"
-    pos: 12
+    path: "/System/Applications/Mail.app/"
+    pos: 11
   - name: "Deliveries"
     path: "/Applications/Deliveries.app/"
+    pos: 12
+  - name: "Messages"
+    path: "/System/Applications/Messages.app/"
     pos: 13
-  - name: "Maps"
-    path: "/Applications/Maps.app/"
+  - name: "Messenger"
+    path: "/Applications/Messenger.app/"
     pos: 14
-  - name: "1Password 7"
-    path: "/Applications/1Password 7.app/"
-    pos: 15
   - name: "Spotify"
     path: "/Applications/Spotify.app/"
-    pos: 16
+    pos: 15
   - name: "Brave Browser"
     path: "/Applications/Brave Browser.app/"
-    pos: 17
+    pos: 16
 
 configure_sudoers: false
 
