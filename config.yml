@@ -107,6 +107,7 @@ homebrew_cask_apps:
   - jetbrains-toolbox
   - macdown
   - macvim
+  - monitorcontrol
   - moom
   - spotify
   - tuple
