@@ -2,20 +2,60 @@
 downloads: ~/.ansible-downloads/
 
 configure_dotfiles: true
-configure_terminal: true
+configure_terminal: false
 configure_osx: true
 
 # Set to 'true' to configure the Dock via dockutil.
-configure_dock: false
-dockitems_remove: []
-# - Launchpad
-# - TV
-# - Podcasts
-# - 'App Store'
-dockitems_persist: []
-# - name: "Sublime Text"
-#   path: "/Applications/Sublime Text.app/"
-#   pos: 5
+configure_dock: true
+dockitems_remove:
+  - Launchpad
+  - TV
+  - Podcasts
+  - 'App Store'
+
+dockitems_persist:
+  - name: "iTerm"
+    path: "/Applications/iTerm.app/"
+    pos: 1
+  - name: "MacVim"
+    path: "/Applications/MacVim.app/"
+    pos: 2
+  - name: "Contacts"
+    path: "/System/Applications/Contacts.app/"
+    pos: 3
+  - name: "Calendar"
+    path: "/System/Applications/Calendar.app/"
+    pos: 4
+  - name: "Maps"
+    path: "/System/Applications/Maps.app/"
+    pos: 5
+  - name: "Drafts"
+    path: "/Applications/Drafts.app/"
+    pos: 6
+  - name: "Evernote"
+    path: "/Applications/Evernote.app/"
+    pos: 7
+  - name: "Todoist"
+    path: "/Applications/Todoist.app/"
+    pos: 8
+  - name: "Mail"
+    path: "/System/Applications/Mail.app/"
+    pos: 9
+  - name: "Deliveries"
+    path: "/Applications/Deliveries.app/"
+    pos: 10
+  - name: "Messages"
+    path: "/System/Applications/Messages.app/"
+    pos: 11
+  - name: "Messenger"
+    path: "/Applications/Messenger.app/"
+    pos: 12
+  - name: "Spotify"
+    path: "/Applications/Spotify.app/"
+    pos: 13
+  - name: "Brave Browser"
+    path: "/Applications/Brave Browser.app/"
+    pos: 14
 
 configure_sudoers: false
 sudoers_custom_config: ''
@@ -24,44 +64,40 @@ sudoers_custom_config: ''
 #   # Allow users in admin group to use sudo with no password.
 #   %admin ALL=(ALL) NOPASSWD: ALL
 
-dotfiles_repo: https://github.com/geerlingguy/dotfiles.git
+dotfiles_repo: https://github.com/garrettheath4/dotfiles-mac.git
+dotfiles_repo_version: main
 dotfiles_repo_accept_hostkey: true
-dotfiles_repo_local_destination: ~/Development/GitHub/dotfiles
+dotfiles_repo_local_destination: ~/dotfiles
 dotfiles_files:
-  - .zshrc
-  - .gitignore
-  - .inputrc
+  - .bash_profile
+  - .editorconfig
+  - .git-completion.bash
+  - .ideavimrc
+  - .mdlrc
   - .osx
+  - .tmux-catalist.conf
+  - .tmux-osx.conf
+  - .tmux.conf
   - .vimrc
+  # directories
+  - .idlerc
+  - .vim
+  - bin
+  - sbin
 
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
-  - autoconf
   - bash-completion
-  - doxygen
-  - gettext
-  - gifsicle
+  - coreutils
   - git
-  - github/gh/gh
-  - go
-  - gpg
-  - httpie
-  - iperf
-  - libevent
-  - sqlite
-  - mcrypt
-  - nmap
   - node
   - nvm
-  - php
-  - ssh-copy-id
-  - cowsay
-  - readline
-  - openssl
-  - pv
+  - python3
+  - reattach-to-user-namespace
+  - ruby
+  - the_silver_searcher
+  - tmux
   - wget
-  - wrk
-  - zsh-history-substring-search
 
 homebrew_taps:
   - homebrew/core
@@ -69,23 +105,46 @@ homebrew_taps:
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
-  - chromedriver
+  - alfred
+  - bartender
+  - bettertouchtool
+  - brave-browser
+  - discord
   - docker
-  - dropbox
-  - firefox
-  - google-chrome
-  - handbrake
-  - licecap
-  - sequel-ace
-  - slack
-  - sublime-text
-  - transmit
-  - vagrant
+  - insync
+  - iterm2
+  - jetbrains-toolbox
+  - macdown
+  - macvim
+  - monitorcontrol
+  - moom
+  - spotify
+  - tuple
 
 # See `geerlingguy.mas` role documentation for usage instructions.
-mas_installed_apps: []
-mas_email: ""
+mas_email: "garrettheath4@gmail.com"
 mas_password: ""
+mas_signin_dialog: true
+mas_installed_apps:
+  - { name: "1Keyboard", id: 766939888 }
+  - { name: "1Password 7 - Password Manager", id: 1333542190 }
+  - { name: "Deliveries: a package tracker", id: 290986013 }
+  - { name: "Drafts", id: 1435957248 }
+  - { name: "Evernote", id: 406056744 }
+  - { name: "Messenger", id: 1480068668 }
+  - { name: "Slack for Desktop", id: 803453959 }
+  - { name: "Table Tool", id: 1122008420 }
+  - { name: "Todoist: To-Do List & Tasks", id: 585829637 }
+  - { name: "Toggl Track - Hours & Time", id: 957734279 }
+  - { name: "WireGuard", id: 1451685025 }
+  - { name: "iA Writer", id: 775737590 }
+  - { name: "iStat Menus", id: 1319778037 }
+  # Safari Extensions
+  - { name: "Dark Reader for Safari", id: 1438243180 }
+  - { name: "Ka-Block!", id: 1335413823 }
+  - { name: "SmileAllDay", id: 1180442868 }
+  - { name: "Tampermonkey", id: 1482490089 }
+  - { name: "Vimari", id: 1480933944 }
 
 osx_script: "~/.osx --no-restart"
 
@@ -120,7 +179,6 @@ sublime_package_control:
   - "GitHub Flavored Markdown Preview"
   - "Jinja2"
   - "Package Control"
-  - "PHP-Twig"
   - "Pretty JSON"
   - "SublimeLinter"
   - "SublimeLinter-contrib-yamllint"
