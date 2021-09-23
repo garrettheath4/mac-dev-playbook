@@ -95,6 +95,7 @@ homebrew_installed_packages:
   - python3
   - reattach-to-user-namespace
   - ruby
+  - shellcheck
   - the_silver_searcher
   - tmux
   - wget
