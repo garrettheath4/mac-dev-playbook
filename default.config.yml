@@ -84,7 +84,8 @@ dotfiles_repo_accept_hostkey: true
 dotfiles_repo_local_destination: ~/dotfiles
 dotfiles_files:
   - .ghk_profile
-  - .zprofile
+  - .ghkrc
+  - .zshrc
   - .bash_profile
   - .editorconfig
   - .git-completion.bash
