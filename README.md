@@ -154,39 +154,21 @@ My [dotfiles](https://github.com/geerlingguy/dotfiles) are also installed into t
 
 Finally, there are a few other preferences and settings added on for various apps and services.
 
+## Full / From-scratch setup guide
 
-## Future additions
+Since I've used this playbook to set up something like 20 different Macs, I decided to write up a full 100% from-scratch install for my own reference (everyone's particular install will be slightly different).
 
-### Things that still need to be done manually
-
-It's my hope that I can get the rest of these things wrapped up into Ansible playbooks soon, but for now, these steps need to be completed manually (assuming you already have Xcode and Ansible installed, and have run this playbook).
-
-  1. Set JJG-Term as the default Terminal theme (it's installed, but not set as default automatically).
-  3. Install all the apps that aren't yet in this setup (see below).
-  4. Remap Caps Lock to Escape (requires macOS Sierra 10.12.1+).
-  5. Set trackpad tracking rate.
-  6. Set mouse tracking rate.
-  7. Configure extra Mail and/or Calendar accounts (e.g. Google, Exchange, etc.).
-
-
-### Configuration to be added:
-
-  - I have vim configuration in the repo, but I still need to add the actual installation:
-    ```
-    mkdir -p ~/.vim/autoload
-    mkdir -p ~/.vim/bundle
-    cd ~/.vim/autoload
-    curl https://raw.githubusercontent.com/tpope/vim-pathogen/master/autoload/pathogen.vim > pathogen.vim
-    cd ~/.vim/bundle
-    git clone git://github.com/scrooloose/nerdtree.git
-    ```
+You can see my full from-scratch setup document here: [full-mac-setup.md](full-mac-setup.md).
 
 
 ## Testing the Playbook
 
-Many people have asked me if I often wipe my entire workstation and start from scratch just to test changes to the playbook. Nope! Instead, I posted instructions for how I build a [Mac OS X VirtualBox VM](https://github.com/geerlingguy/mac-osx-virtualbox-vm), on which I can continually run and re-run this playbook to test changes and make sure things work correctly.
+Many people have asked me if I often wipe my entire workstation and start from scratch just to test changes to the playbook. Nope! This project is [continuously tested on GitHub Actions' macOS infrastructure](https://github.com/geerlingguy/mac-dev-playbook/actions?query=workflow%3ACI).
 
-Additionally, this project is [continuously tested on GitHub Actions' macOS infrastructure](https://github.com/geerlingguy/mac-dev-playbook/actions?query=workflow%3ACI).
+You can also run macOS itself inside a VM, for at least some of the required testing (App Store apps and some proprietary software might not install properly). I currently recommend:
+
+  - [UTM](https://mac.getutm.app)
+  - [Tart](https://github.com/cirruslabs/tart)
 
 
 ## Ansible for DevOps
