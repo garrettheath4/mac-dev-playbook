@@ -13,7 +13,7 @@ dockitems_remove:
   - Photos
   - FaceTime
   - Reminders
-  - Notes
+  - Freeform
   - TV
   - Music
   - Podcasts
@@ -22,7 +22,7 @@ dockitems_remove:
   - Numbers
   - Pages
   - 'App Store'
-  - 'System Preferences'
+  - 'System Settings'
 
 dockitems_persist:
   - name: "iTerm"
@@ -61,8 +61,8 @@ dockitems_persist:
   - name: "Messages"
     path: "/System/Applications/Messages.app/"
     pos: 12
-  - name: "Messenger"
-    path: "/Applications/Messenger.app/"
+  - name: "Slack"
+    path: "/Applications/Slack.app/"
     pos: 13
   - name: "Spotify"
     path: "/Applications/Spotify.app/"
@@ -119,21 +119,20 @@ homebrew_installed_packages:
   - wget
   - youtube-dl
 
-homebrew_taps:
-  - homebrew/core
-  - homebrew/cask
+homebrew_taps: []
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
+  - 1password
   - alfred
   - bartender
-  - bettertouchtool
   - brave-browser
   - discord
   - docker
   - insync
   - iterm2
   - jetbrains-toolbox
+  - kindle
   - macdown
   - macvim
   - monitorcontrol
@@ -147,21 +146,17 @@ mas_password: ""
 mas_signin_dialog: true
 mas_installed_apps:
   - { name: "1Keyboard", id: 766939888 }
-  - { name: "1Password 7 - Password Manager", id: 1333542190 }
   - { name: "Deliveries: a package tracker", id: 290986013 }
   - { name: "Drafts", id: 1435957248 }
   - { name: "Messenger", id: 1480068668 }
   - { name: "Slack for Desktop", id: 803453959 }
   - { name: "Table Tool", id: 1122008420 }
   - { name: "Todoist: To-Do List & Tasks", id: 585829637 }
-  - { name: "Toggl Track - Hours & Time", id: 957734279 }
   - { name: "WireGuard", id: 1451685025 }
   - { name: "iA Writer", id: 775737590 }
-  - { name: "iStat Menus", id: 1319778037 }
   # Safari Extensions
   - { name: "Dark Reader for Safari", id: 1438243180 }
   - { name: "Ka-Block!", id: 1335413823 }
-  - { name: "SmileAllDay", id: 1180442868 }
   - { name: "Tampermonkey", id: 1482490089 }
   - { name: "Vimari", id: 1480933944 }
 

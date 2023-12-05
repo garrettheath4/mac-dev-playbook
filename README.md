@@ -45,7 +45,7 @@ If you need to supply an SSH password (if you don't use SSH keys), make sure to 
 
 ### Running a specific set of tagged tasks
 
-You can filter which part of the provisioning process to run by specifying a set of tags using `ansible-playbook`'s `--tags` flag. The tags available are `dotfiles`, `homebrew`, `mas`, `extra-packages` and `osx`.
+You can filter which part of the provisioning process to run by specifying a set of tags using `ansible-playbook`'s `--tags` flag. The tags available are `dotfiles`, `homebrew`, `mas`, `extra-packages`, `osx`, and `dock`.
 
     ansible-playbook main.yml -K --tags "dotfiles,homebrew"
 
@@ -98,17 +98,34 @@ Any variable can be overridden in `config.yml`; see the supporting roles' docume
 
 ## Included Applications / Configuration (Default)
 
+Applications (installed from Mac App Store):
+
+ - [1Keyboard](https://apps.apple.com/us/app/id766939888)
+ - [Deliveries: a package tracker](https://apps.apple.com/us/app/id290986013)
+ - [Drafts](https://apps.apple.com/us/app/id1435957248)
+ - [Messenger](https://apps.apple.com/us/app/id1480068668)
+ - [Slack for Desktop](https://apps.apple.com/us/app/id803453959)
+ - [Table Tool](https://apps.apple.com/us/app/id1122008420)
+ - [Todoist: To-Do List & Tasks](https://apps.apple.com/us/app/id585829637)
+ - [WireGuard](https://apps.apple.com/us/app/id1451685025)
+ - [iA Writer](https://apps.apple.com/us/app/id775737590)
+ - [Dark Reader for Safari](https://apps.apple.com/us/app/id1438243180)
+ - [Ka-Block!](https://apps.apple.com/us/app/id1335413823)
+ - [Tampermonkey](https://apps.apple.com/us/app/id1482490089)
+ - [Vimari](https://apps.apple.com/us/app/id1480933944)
+
 Applications (installed with Homebrew Cask):
 
+  - [1Password 8](https://formulae.brew.sh/cask/1password)
   - [Alfred](https://formulae.brew.sh/cask/alfred)
   - [Bartender](https://formulae.brew.sh/cask/bartender)
-  - [BetterTouchTool](https://formulae.brew.sh/cask/bettertouchtool)
   - [Brave](https://formulae.brew.sh/cask/brave-browser)
   - [Discord](https://formulae.brew.sh/cask/discord)
   - [Docker](https://formulae.brew.sh/cask/docker)
   - [Insync](https://formulae.brew.sh/cask/insync)
   - [iTerm2](https://formulae.brew.sh/cask/iterm2)
   - [JetBrains Toolbox](https://formulae.brew.sh/cask/jetbrains-toolbox)
+  - [Kindle](https://formulae.brew.sh/cask/kindle)
   - [MacDown](https://formulae.brew.sh/cask/macdown)
   - [MacVim](https://formulae.brew.sh/cask/macvim)
   - [MonitorControl](https://formulae.brew.sh/cask/monitorcontrol)
