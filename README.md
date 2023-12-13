@@ -132,6 +132,7 @@ Applications (installed with Homebrew Cask):
   - [Moom](https://formulae.brew.sh/cask/moom)
   - [Spotify](https://formulae.brew.sh/cask/spotify)
   - [Tuple](https://formulae.brew.sh/cask/tuple)
+  - [xbar](https://formulae.brew.sh/cask/xbar)
 
 Packages (installed with Homebrew):
 

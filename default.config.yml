@@ -139,6 +139,7 @@ homebrew_cask_apps:
   - moom
   - spotify
   - tuple
+  - xbar
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_email: "garrettheath4@gmail.com"
