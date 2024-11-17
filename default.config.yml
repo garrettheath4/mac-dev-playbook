@@ -61,15 +61,27 @@ dockitems_persist:
   - name: "Slack"
     path: "/Applications/Slack.app/"
     pos: 12
-  - name: "Slack"
-    path: "/Applications/Slack.app/"
+  - name: "Messenger"
+    path: "/Applications/Messenger.app/"
     pos: 13
+  - name: "Telegram"
+    path: "/Applications/Telegram.app/"
+    pos: 14
+  - name: "iPhone Mirroring"
+    path: "/Applications/iPhone Mirroring.app/"
+    pos: 15
   - name: "Spotify"
     path: "/Applications/Spotify.app/"
-    pos: 14
-  - name: "Brave Browser"
-    path: "/Applications/Brave Browser.app/"
-    pos: 15
+    pos: 16
+  - name: "VSCodium"
+    path: "/Applications/VSCodium.app/"
+    pos: 17
+  - name: "1Password"
+    path: "/Applications/1Password.app/"
+    pos: 18
+  - name: "Arc"
+    path: "/Applications/Arc.app/"
+    pos: 19
 
 configure_sudoers: false
 sudoers_custom_config: ''
@@ -124,7 +136,8 @@ homebrew_taps: []
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
   - 1password
-  - alfred
+  - alfred@4
+  - arc
   - bartender
   - brave-browser
   - discord
@@ -135,8 +148,7 @@ homebrew_cask_apps:
   - kindle
   - macdown
   - macvim
-  - monitorcontrol
-  - moom
+  #- moom  # I have a license for Moom 3, not Moom 4
   - spotify
   - tuple
   - xbar
