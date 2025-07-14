@@ -145,6 +145,8 @@ Applications (installed with Homebrew Cask):
 
 Packages (installed with Homebrew):
 
+  - [agg](https://github.com/asciinema/agg)
+  - [asciinema](https://asciinema.org)
   - bash-completion
   - coreutils
   - ffmpeg
