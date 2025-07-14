@@ -137,7 +137,6 @@ homebrew_taps: []
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
   - 1password
-  - alfred@4
   - arc
   - bartender
   - brave-browser
@@ -150,6 +149,7 @@ homebrew_cask_apps:
   - macdown
   - macvim
   #- moom  # I have a license for Moom 3, not Moom 4
+  - raycast
   - spotify
   - tuple
   - xbar

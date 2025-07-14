@@ -126,7 +126,6 @@ Applications (installed from Mac App Store):
 Applications (installed with Homebrew Cask):
 
   - [1Password 8](https://formulae.brew.sh/cask/1password)
-  - [Alfred](https://formulae.brew.sh/cask/alfred)
   - [Bartender](https://formulae.brew.sh/cask/bartender)
   - [Brave](https://formulae.brew.sh/cask/brave-browser)
   - [Discord](https://formulae.brew.sh/cask/discord)
@@ -139,6 +138,7 @@ Applications (installed with Homebrew Cask):
   - [MacVim](https://formulae.brew.sh/cask/macvim)
   - [MonitorControl](https://formulae.brew.sh/cask/monitorcontrol)
   - [Moom](https://formulae.brew.sh/cask/moom)
+  - [Raycast](https://www.raycast.com/)
   - [Spotify](https://formulae.brew.sh/cask/spotify)
   - [Tuple](https://formulae.brew.sh/cask/tuple)
   - [xbar](https://formulae.brew.sh/cask/xbar)
