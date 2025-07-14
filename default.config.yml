@@ -121,6 +121,7 @@ homebrew_installed_packages:
   - bash-completion
   - coreutils
   - ffmpeg
+  - fzf
   - git
   - moreutils  # installs utils like `vipe`. See https://joeyh.name/code/moreutils/
   - node

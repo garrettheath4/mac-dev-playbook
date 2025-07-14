@@ -150,6 +150,7 @@ Packages (installed with Homebrew):
   - bash-completion
   - coreutils
   - ffmpeg
+  - [fzf](https://github.com/junegunn/fzf) (fuzzy finder)
   - git
   - [moreutils](https://joeyh.name/code/moreutils/) (`vipe` and other commands)
   - node
