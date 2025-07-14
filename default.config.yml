@@ -120,6 +120,7 @@ homebrew_installed_packages:
   - coreutils
   - ffmpeg
   - git
+  - moreutils  # installs utils like `vipe`. See https://joeyh.name/code/moreutils/
   - node
   - nvm
   - python3

@@ -149,6 +149,7 @@ Packages (installed with Homebrew):
   - coreutils
   - ffmpeg
   - git
+  - [moreutils](https://joeyh.name/code/moreutils/) (`vipe` and other commands)
   - node
   - nvm
   - python3
