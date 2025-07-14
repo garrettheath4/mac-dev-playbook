@@ -154,12 +154,12 @@ Packages (installed with Homebrew):
   - python3
   - reattach-to-user-namespace
   - ruby
-  - shellcheck
-  - the_silver_searcher
+  - [shellcheck](https://github.com/koalaman/shellcheck)
+  - [the_silver_searcher](https://github.com/ggreer/the_silver_searcher) (`ag` command)
   - tmux
   - wget
   - youtube-dl
-  - zoxide
+  - [zoxide](https://github.com/ajeetdsouza/zoxide)
 
 My [dotfiles](https://github.com/geerlingguy/dotfiles) are also installed into the current user's home directory, including the `.osx` dotfile for configuring many aspects of macOS for better performance and ease of use. You can disable dotfiles management by setting `configure_dotfiles: no` in your configuration.
 
