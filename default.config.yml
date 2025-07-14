@@ -130,6 +130,7 @@ homebrew_installed_packages:
   - tmux
   - wget
   - youtube-dl
+  - zoxide
 
 homebrew_taps: []
 
